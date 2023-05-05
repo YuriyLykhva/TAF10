@@ -30,6 +30,7 @@ public class LoginTest extends BaseTest{
         return new String[][]{
                 {"tqwretqwe@email.com", "4Zmw!MjXZrFWPN3", "Bill Gates"},
                 {"AndrewTate123@gmail.com", "1607200525ZZmm", "Andrew Tate"},
+                {"luka.dropik@gmail.com", "qwertyuiop[]\\asdfghjkl;'zxcvbnm,./1234567890", "Luka Dropik"},
         };
     }
 
