@@ -29,7 +29,7 @@ public class LoginTest extends BaseTest{
     public Object[][] credentials() {
         return new String[][]{
                 {"tqwretqwe@email.com", "4Zmw!MjXZrFWPN3", "Bill Gates"},
-                {"tqwretqwe@email.com", "4Zmw!MjXZrFWPN3", "Bill Gates"},
+                {"tqwretqwe@email.com", "4Zmw!MjXZrFWPN3", "Bill Gates1"},
         };
     }
 
