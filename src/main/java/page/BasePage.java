@@ -4,14 +4,18 @@ import org.openqa.selenium.WebDriver;
 
 public abstract class BasePage {
 
-    public static final int WAIT_TIMEOUT_SECONDS = 10;
+    protected static WebDriver driver;
 
-    public WebDriver driver;
+    public static final int WAIT_TIMEOUT_SECONDS = 10;
 
     public abstract BasePage openPage();
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
         driver.manage().window().maximize();
+    }
+
+    public static WebDriver getDriver() {
+        return driver;
     }
 }
