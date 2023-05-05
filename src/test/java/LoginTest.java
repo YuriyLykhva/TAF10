@@ -12,6 +12,9 @@ public class LoginTest extends BaseTest{
                 .loginViaModel(testUser)
                 .getLoggedInUserName();
 
-        Assert.assertEquals(loggedInUserName, testUser.getUserName());
+        String editedLoggedInUserName = loggedInUserName
+                .substring(loggedInUserName.indexOf(" ") + 1, loggedInUserName.length() - 1);
+
+        Assert.assertEquals(editedLoggedInUserName, testUser.getUserName());
     }
 }
